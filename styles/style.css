@@ -97,6 +97,12 @@
   width: 100%;
   margin-top: 100px;
   outline: 1px solid rgba(255, 65, 65, 0.2); /* временная обводка */
+  overflow: hidden;
+}
+
+.content__section_theme_dark {
+  margin-top: 0;
+  background-color: #1f1f1f;
 }
 
 /* Блок description ====================================================================*/
@@ -153,6 +159,7 @@
 }
 
 .section-title {
+  z-index: 1;
   margin: 0;
   margin-bottom: 20px;
   width: 60%;
@@ -163,6 +170,7 @@
 }
 
 .section-subtitle {
+  z-index: 1;
   margin: 0;
   width: 60%;
   line-height: 34px;
@@ -171,12 +179,25 @@
   text-align: center;
 }
 
+.section-title__section_theme_dark, .section-subtitle__section_theme_dark {
+  color: #fff;
+}
+
+/* Блок table ====================================================================*/
+
 .table {
+  z-index: 1;
   margin: 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   width: 1100px;
+}
+
+.table_theme_dark {
+  counter-reset: new-counter;
+  margin: 0;
+  padding: 0;
 }
 
 .table__cell {
@@ -185,6 +206,7 @@
 }
 
 .table__heading {
+  margin: 0;
   line-height: 1.15em;
   font-size: 24px;
   font-weight: 600;
@@ -196,6 +218,15 @@
   line-height: 1.2em;
   font-size: 18px;
   font-weight: normal;
+}
+
+.table__cell_theme_dark {
+  width: 200px;
+  color: white;
+  margin-right: 0;
+  margin-top: 80px;
+  list-style-type: none;
+  counter-increment: new-counter;
 }
 
 /* Блок feynman ====================================================================*/
@@ -244,11 +275,24 @@
   text-decoration: underline;
 }
 
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
+/* Блок kaufman ====================================================================*/
+
+.kaufman {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 90px 0;
+}
+
+.kaufman__triangle {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  right: -120px;
+  width: 877px;
+  height: 877px;
+  background: url(../images/kaufman-triangle.svg) center/contain no-repeat;
 }
 
 .footer {
