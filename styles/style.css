@@ -74,6 +74,7 @@
 
 .header__main-illustration {
   position: absolute;
+  object-fit: cover;
   right: 0;
   bottom: 0;
   z-index: 1;
@@ -100,7 +101,6 @@
 .content__section {
   width: 100%;
   margin-top: 100px;
-  overflow: hidden;
 }
 
 .content__section_theme_dark {
@@ -190,17 +190,13 @@
 
 .table {
   z-index: 1;
-  margin: 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   width: 1100px;
-}
-
-.table_theme_dark {
-  counter-reset: new-counter;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .table__cell {
@@ -225,16 +221,14 @@
 
 .table__cell_theme_dark {
   width: 200px;
-  color: white;
-  margin-right: 0;
+  color: #fff;
   margin-top: 80px;
-  list-style-type: none;
-  counter-increment: new-counter;
 }
 
 /* Блок feynman ====================================================================*/
 
 .feynman {
+  box-sizing: border-box;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -286,13 +280,14 @@
   align-items: center;
   flex-direction: column;
   padding: 90px 0;
+  overflow: hidden;
 }
 
 .kaufman__triangle {
   z-index: 0;
   position: absolute;
   top: 0;
-  right: -120px;
+  right: -210px;
   width: 877px;
   height: 877px;
   background: url(../images/kaufman-triangle.svg) center/contain no-repeat;
@@ -351,6 +346,8 @@
 }
 
 .footer__column-link {
+  display: flex;
+  align-items: center;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
@@ -359,7 +356,6 @@
 }
 
 .footer__social-icon {
-  display: inline-block;
   width: 16px;
   height: 16px;
   margin-right: 10px;
