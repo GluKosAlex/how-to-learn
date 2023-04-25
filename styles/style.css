@@ -65,11 +65,14 @@
 .header__link {
   color: #2f80ed;
   text-decoration: none;
+  opacity: 1;
+  transition: opacity .3s linear;
 }
 
 .header__link:hover,
 .header__link:focus {
   text-decoration: underline;
+  opacity: .7;
 }
 
 .header__main-illustration {
@@ -269,11 +272,14 @@
   font-weight: normal;
   color: #2f80ed;
   text-decoration: none;
+  opacity: 1;
+  transition: opacity .3s linear;
 }
 
 .feynman__link:hover,
 .feynman__link:focus {
   text-decoration: underline;
+  opacity: .7;
 }
 
 /* Блок kaufman ====================================================================*/
@@ -357,6 +363,13 @@
   font-weight: normal;
   color: #fff;
   text-decoration: none;
+  opacity: 1;
+  transition: opacity .3s linear;
+}
+
+.footer__column-link:hover,
+.footer__column-link:focus {
+  opacity: .7;
 }
 
 .footer__social-icon {
