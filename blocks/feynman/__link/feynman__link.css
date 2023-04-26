@@ -1,0 +1,20 @@
+.feynman__link {
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  color: #2f80ed;
+  text-decoration: none;
+  opacity: 1;
+  transition: opacity .3s linear;
+}
+.feynman__link:hover {
+  text-decoration: underline;
+  opacity: .7;
+}
+.feynman__link:focus {
+  text-decoration: underline;
+  opacity: .7;
+}
