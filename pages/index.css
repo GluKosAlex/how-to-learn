@@ -1,5 +1,7 @@
 @import url(/blocks/page/page.css);
 
+@import url(/blocks/rotation/rotation.css);
+
 @import url(/blocks/header/header.css);
 @import url(/blocks/header/__title/header__title.css);
 @import url(/blocks/header/__subtitle/header__subtitle.css);
@@ -16,6 +18,16 @@
 @import url(/blocks/content/__section/_theme/content__section_theme_dark.css);
 
 @import url(/blocks/description/description.css);
+
+@import url(/blocks/techniques/techniques.css);
+
+@import url(/blocks/video/video.css);
+
+@import url(/blocks/oakley/oakley.css);
+
+@import url(/blocks/khan/khan.css);
+
+@import url(/blocks/resources/resources.css);
 
 @import url(/blocks/two-columns/two-columns.css);
 @import url(/blocks/two-columns/__brief/two-columns__brief.css);
