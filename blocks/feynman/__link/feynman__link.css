@@ -7,14 +7,10 @@
   font-weight: normal;
   color: #2f80ed;
   text-decoration: none;
-  opacity: 1;
-  transition: opacity .3s linear;
 }
 .feynman__link:hover {
   text-decoration: underline;
-  opacity: .7;
 }
 .feynman__link:focus {
   text-decoration: underline;
-  opacity: .7;
 }

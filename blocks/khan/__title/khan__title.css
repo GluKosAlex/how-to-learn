@@ -1,1 +1,4 @@
-.khan__title {}
+.khan__title {
+  text-align: left;
+  margin: 0;
+}

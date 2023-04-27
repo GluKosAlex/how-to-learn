@@ -1,0 +1,12 @@
+.link-hover-effect {
+  opacity: 1;
+  transition: opacity .3s linear;
+}
+
+.link-hover-effect:hover {
+  opacity: .7;
+}
+
+.link-hover-effect:focus {
+  opacity: .7;
+}

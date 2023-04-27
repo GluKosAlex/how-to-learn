@@ -1,1 +1,6 @@
-.resources {}
+.resources {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 217px;
+}
