@@ -1,1 +1,9 @@
-.techniques {}
+.techniques {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  outline: 1px solid green;
+}
